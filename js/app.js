@@ -74,20 +74,28 @@
 
 // 6
 
-function sumArray(arr) {
-	let sum = 0;
-	for (let i = 0; i <= arr.length - 1; i++) {
-		sum += arr[i];
-	}
-	console.log(sum);
-}
+// function sumArray(arr) {
+// 	let sum = 0;
+// 	for (let i = 0; i <= arr.length - 1; i++) {
+// 		sum += arr[i];
+// 	}
+// 	console.log(sum);
+// }
 
-function multArray(arr) {
-	let result = 1;
-	for (let i = 0; i <= arr.length - 1; i++) {
-		result *= arr[i];
-	}
-	console.log(result);
+// function multArray(arr) {
+// 	let result = 1;
+// 	for (let i = 0; i <= arr.length - 1; i++) {
+// 		result *= arr[i];
+// 	}
+// 	console.log(result);
+// }
+
+
+// 7
+
+function numOfArg() {
+	let arg = arguments.length;
+	return console.log(arg);
 }
 
 
