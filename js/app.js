@@ -43,16 +43,35 @@
 
 // 4
 
-function compareNumbers(a,b) {
-	return a - b;
+// function compareNumbers(a,b) {
+// 	return a - b;
+// }
+
+// function maxOfThree(num1, num2, num3) {
+// 	let numArr = [];
+// 	numArr.push(num1, num2, num3);
+// 	numArr.sort(compareNumbers);
+// 	console.log(numArr[numArr.length - 1]);
+// }
+
+
+// 5
+
+let vowels = ['a','e','i','o','u'];
+
+function isVowel(char) {
+	if (vowels.includes(char)) {
+		return console.log(char+" is a vowel");
+	}
+	else if (char === 'y') {
+		console.log('is '+char+" a vowel??");
+	}
+	else {
+		return console.log(char+" is not a vowel");
+	}
 }
 
-function maxOfThree(num1, num2, num3) {
-	let numArr = [];
-	numArr.push(num1, num2, num3);
-	numArr.sort(compareNumbers);
-	console.log(numArr[numArr.length - 1]);
-}
+
 
 
 
