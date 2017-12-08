@@ -57,19 +57,51 @@
 
 // 5
 
-let vowels = ['a','e','i','o','u'];
+// let vowels = ['a','e','i','o','u'];
 
-function isVowel(char) {
-	if (vowels.includes(char)) {
-		return console.log(char+" is a vowel");
+// function isVowel(char) {
+// 	if (vowels.includes(char)) {
+// 		return console.log(char+" is a vowel");
+// 	}
+// 	else if (char === 'y') {
+// 		console.log('is '+char+" a vowel??");
+// 	}
+// 	else {
+// 		return console.log(char+" is not a vowel");
+// 	}
+// }
+
+
+// 6
+
+function sumArray(arr) {
+	let sum = 0;
+	for (let i = 0; i <= arr.length - 1; i++) {
+		sum += arr[i];
 	}
-	else if (char === 'y') {
-		console.log('is '+char+" a vowel??");
-	}
-	else {
-		return console.log(char+" is not a vowel");
-	}
+	console.log(sum);
 }
+
+function multArray(arr) {
+	let result = 1;
+	for (let i = 0; i <= arr.length - 1; i++) {
+		result *= arr[i];
+	}
+	console.log(result);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
