@@ -98,20 +98,36 @@
 // 	return console.log(arg);
 // }
 
+
 // 8
 
-function reverseString(str) {
-	let arr = str.split('');
-	let reversed = '';
-	for (let i = arr.length - 1; i >= 0; i--) {
-		reversed += arr[i];
+// function reverseString(str) {
+// 	let arr = str.split('');
+// 	let reversed = '';
+// 	for (let i = arr.length - 1; i >= 0; i--) {
+// 		reversed += arr[i];
+// 	}
+// 	console.log(reversed);
+// }
+
+// 9
+
+let nameArr = ['michael', 'abbie', 'bill'];
+
+function findLongestWord(arr) {
+	temp = 0;
+	tempArr = []
+	for (let i = 0; i <= arr.length - 1; i++) {
+		if (arr[i].length > temp) {
+			temp = arr[i].length;
+			tempArr = [];
+			tempArr.push(arr[i], arr[i].length);
+		}
 	}
-	console.log(reversed);
+	console.log(tempArr[0]+" is "+tempArr[1]+" character(s) long.");
 }
 
-
-
-
+console.log(findLongestWord(nameArr));
 
 
 
