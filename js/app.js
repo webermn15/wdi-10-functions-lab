@@ -93,12 +93,21 @@
 
 // 7
 
-function numOfArg() {
-	let arg = arguments.length;
-	return console.log(arg);
+// function numOfArg() {
+// 	let arg = arguments.length;
+// 	return console.log(arg);
+// }
+
+// 8
+
+function reverseString(str) {
+	let arr = str.split('');
+	let reversed = '';
+	for (let i = arr.length - 1; i >= 0; i--) {
+		reversed += arr[i];
+	}
+	console.log(reversed);
 }
-
-
 
 
 
