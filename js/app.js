@@ -28,17 +28,34 @@
 
 // 3
 
-function maxOfTwoNumbers(num1, num2) {
-	if (num1 > num2) {
-		console.log(num1+" is larger");
-	}
-	else if (num1 < num2) {
-		console.log(num2+" is larger");
-	}
-	else {
-		console.log("they are equal");
-	}
+// function maxOfTwoNumbers(num1, num2) {
+// 	if (num1 > num2) {
+// 		console.log(num1+" is larger");
+// 	}
+// 	else if (num1 < num2) {
+// 		console.log(num2+" is larger");
+// 	}
+// 	else {
+// 		console.log("they are equal");
+// 	}
+// }
+
+
+// 4
+
+function compareNumbers(a,b) {
+	return a - b;
 }
+
+function maxOfThree(num1, num2, num3) {
+	let numArr = [];
+	numArr.push(num1, num2, num3);
+	numArr.sort(compareNumbers);
+	console.log(numArr[numArr.length - 1]);
+}
+
+
+
 
 
 
