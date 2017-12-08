@@ -112,27 +112,40 @@
 
 // 9
 
-let nameArr = ['michael', 'abbie', 'bill'];
+let nameArr = ['michael', 'abbie', 'bill', 'dan', 'james bardolph'];
 
-function findLongestWord(arr) {
-	temp = 0;
-	tempArr = []
+// function findLongestWord(arr) {
+// 	temp = 0;
+// 	tempArr = []
+// 	for (let i = 0; i <= arr.length - 1; i++) {
+// 		if (arr[i].length > temp) {
+// 			temp = arr[i].length;
+// 			tempArr = [];
+// 			tempArr.push(arr[i], arr[i].length);
+// 		}
+// 	}
+// 	console.log(tempArr[0]+" is "+tempArr[1]+" character(s) long.");
+// }
+
+// console.log(findLongestWord(nameArr));
+
+
+// 10
+
+
+let wordLengthFilter = 5;
+
+function filterLongWords(arr, filter) {
+	let longWordArr = [];
 	for (let i = 0; i <= arr.length - 1; i++) {
-		if (arr[i].length > temp) {
-			temp = arr[i].length;
-			tempArr = [];
-			tempArr.push(arr[i], arr[i].length);
+		if (arr[i].length >= filter) {
+			longWordArr.push(arr[i]);
 		}
 	}
-	console.log(tempArr[0]+" is "+tempArr[1]+" character(s) long.");
+	console.log(longWordArr);
 }
 
-console.log(findLongestWord(nameArr));
-
-
-
-
-
+console.log(filterLongWords(nameArr, wordLengthFilter));
 
 
 
