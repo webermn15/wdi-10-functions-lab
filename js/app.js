@@ -112,7 +112,7 @@
 
 // 9
 
-let nameArr = ['michael', 'abbie', 'bill', 'dan', 'james bardolph'];
+// let nameArr = ['michael', 'abbie', 'bill', 'dan', 'james bardolph'];
 
 // function findLongestWord(arr) {
 // 	temp = 0;
@@ -133,26 +133,32 @@ let nameArr = ['michael', 'abbie', 'bill', 'dan', 'james bardolph'];
 // 10
 
 
-let wordLengthFilter = 5;
+// let wordLengthFilter = 5;
 
-function filterLongWords(arr, filter) {
-	let longWordArr = [];
-	for (let i = 0; i <= arr.length - 1; i++) {
-		if (arr[i].length >= filter) {
-			longWordArr.push(arr[i]);
-		}
+// function filterLongWords(arr, filter) {
+// 	let longWordArr = [];
+// 	for (let i = 0; i <= arr.length - 1; i++) {
+// 		if (arr[i].length >= filter) {
+// 			longWordArr.push(arr[i]);
+// 		}
+// 	}
+// 	console.log(longWordArr);
+// }
+
+// console.log(filterLongWords(nameArr, wordLengthFilter));
+
+
+//Bonus 1
+String.prototype.reverseString = function () {
+	let arr = this.split('');
+	let reversed = '';
+	for (let i = arr.length - 1; i >= 0; i--) {
+		reversed += arr[i];
 	}
-	console.log(longWordArr);
-}
+	return reversed;
+}	
 
-console.log(filterLongWords(nameArr, wordLengthFilter));
-
-
-
-
-
-
-
+console.log("general asssembly".reverseString());
 
 
 
