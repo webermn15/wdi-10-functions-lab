@@ -101,14 +101,14 @@
 
 // 8
 
-// function reverseString(str) {
-// 	let arr = str.split('');
-// 	let reversed = '';
-// 	for (let i = arr.length - 1; i >= 0; i--) {
-// 		reversed += arr[i];
-// 	}
-// 	console.log(reversed);
-// }
+function reverseString(str) {
+	let arr = str.split('');
+	let reversed = '';
+	for (let i = arr.length - 1; i >= 0; i--) {
+		reversed += arr[i];
+	}
+	console.log(reversed);
+}
 
 // 9
 
@@ -149,16 +149,51 @@
 
 
 //Bonus 1
-String.prototype.reverseString = function () {
-	let arr = this.split('');
-	let reversed = '';
-	for (let i = arr.length - 1; i >= 0; i--) {
-		reversed += arr[i];
-	}
-	return reversed;
-}	
 
-console.log("general asssembly".reverseString());
+// String.prototype.reverseString = function () {
+// 	let arr = this.split('');
+// 	let reversed = '';
+// 	for (let i = arr.length - 1; i >= 0; i--) {
+// 		reversed += arr[i];
+// 	}
+// 	return reversed;
+// }	
+
+// console.log("general asssembly".reverseString());
+
+
+//Bonus 2
+
+function listCharacters (str) {
+	let obj = {};
+	let tempArray = [];
+	let splitChars = str.split('');
+	for (let i = 0; i <= splitChars.length - 1; i++) {
+		if (!tempArray.includes(splitChars[i])) {
+			tempArray.push(splitChars[i]);
+		}
+	}
+	for (let i = 0; i <= tempArray.length - 1; i++) {
+		Object.defineProperty(obj, tempArray[i], {});
+	}
+
+
+	console.log(obj);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
