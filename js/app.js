@@ -167,7 +167,7 @@
 var finalObj = {};
 
 function listChars(str) {
-	let noSpaces = str.split(' ').join();
+	let noSpaces = str.split(' ').join('');
 	let splitChars = noSpaces.split('');
 	splitChars.forEach(function(char) {
 		if (!finalObj[char]) {
@@ -179,9 +179,6 @@ function listChars(str) {
 	})
 	console.log(finalObj);
 }
-
-
-
 
 
 
