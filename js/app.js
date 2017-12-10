@@ -51,7 +51,7 @@
 // 	let numArr = [];
 // 	numArr.push(num1, num2, num3);
 // 	numArr.sort(compareNumbers);
-// 	console.log(numArr[numArr.length - 1]);
+// 	return console.log(numArr[numArr.length - 1]);
 // }
 
 
@@ -101,14 +101,14 @@
 
 // 8
 
-function reverseString(str) {
-	let arr = str.split('');
-	let reversed = '';
-	for (let i = arr.length - 1; i >= 0; i--) {
-		reversed += arr[i];
-	}
-	console.log(reversed);
-}
+// function reverseString(str) {
+// 	let arr = str.split('');
+// 	let reversed = '';
+// 	for (let i = arr.length - 1; i >= 0; i--) {
+// 		reversed += arr[i];
+// 	}
+// 	console.log(reversed);
+// }
 
 // 9
 
@@ -164,29 +164,21 @@ function reverseString(str) {
 
 //Bonus 2
 
-function listCharacters (str) {
-	let obj = {};
-	let tempArray = [];
-	let splitChars = str.split('');
-	for (let i = 0; i <= splitChars.length - 1; i++) {
-		if (!tempArray.includes(splitChars[i])) {
-			tempArray.push(splitChars[i]);
+var finalObj = {};
+
+function listChars(str) {
+	let noSpaces = str.split(' ').join();
+	let splitChars = noSpaces.split('');
+	splitChars.forEach(function(char) {
+		if (!finalObj[char]) {
+			finalObj[char] = 1;
 		}
-	}
-	for (let i = 0; i <= tempArray.length - 1; i++) {
-		Object.defineProperty(obj, tempArray[i], {});
-	}
-
-
-	console.log(obj);
+		else {
+			finalObj[char] += 1;
+		}
+	})
+	console.log(finalObj);
 }
-
-
-
-
-
-
-
 
 
 
